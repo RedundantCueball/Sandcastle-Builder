@@ -1328,7 +1328,7 @@ Molpy.DefineGUI = function() {
 			if(((floor > 3094)&&(frac===0))||((floor > 1417)&&(frac===0.1))){
 				return 'https://placekitten.com/' + (Molpy.IsEnabled('Chromatic Heresy') ? '' : 'g/') +x + '/' + y;
 			} else if(frac==0){
-				return 'https://xkcd.mscha.org/frame/' + newp;
+				return 'https://deplicator.github.io/xkcd-time-at-your-pace/data/frames/' + newp + '.png';
 			} else if(Molpy.fracParts.indexOf(frac)>-1){
 				return 'https://xkcd.mscha.org/otcstories/'+Molpy.NewPixFloor(frac)+Molpy.fixLength(floor,4)+'.png'
 			} else if(Molpy.fracParts.indexOf(frac)==-1) {return 'https://placekitten.com/' +(Molpy.IsEnabled('Chromatic Heresy') ? '' : '/g') + x + '/' + y;} //ErrorCat is error
@@ -1343,7 +1343,7 @@ Molpy.DefineGUI = function() {
 		if(((floor > 3094)&&(frac==0))||((floor > 1417)&&(frac==0.1)))
 			return 'https://placekitten.com/' + (Molpy.IsEnabled('Chromatic Heresy') ? '' : '/g') +x + '/' + y;
 		else if(frac==0){
-			return 'https://xkcd.mscha.org/frame/' + newp;
+			return 'https://deplicator.github.io/xkcd-time-at-your-pace/data/frames/' + newp + '.png';
 		} else if(Molpy.fracParts.indexOf(frac)>-1){
 			return 'https://xkcd.mscha.org/otcstories/'+Molpy.NewPixFloor(frac)+Molpy.fixLength(floor,4)+'.png'
 		} else if(Molpy.fracParts.indexOf(frac)==-1){return 'https://placekitten.com/' + (Molpy.IsEnabled('Chromatic Heresy') ? '' : '/g') +x + '/' + y;} //ErrorCat is error
